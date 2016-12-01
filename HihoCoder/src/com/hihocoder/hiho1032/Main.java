@@ -9,11 +9,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner sin = new Scanner(System.in);
         String a,b;
+        int count = sin.nextInt();
+        String[] strArray = new String[count];
 
-        while(!sin.hasNext("0")){
+        for(int i=0;i < count;i++){
             a = sin.next();
-            boolean flag = hasCicle(a);
-            System.out.println("是不是回文？" + flag);
+            strArray[i] = a;
+        }
+        for(int i=0;i < count; i++){
+            int length = mostCicle(strArray[i]);
+            System.out.println(length);
         }
     }
 
@@ -50,5 +55,30 @@ public class Main {
             reStr += c;
         }
         return reStr;
+    }
+
+    /**
+     * 最大子串回文数长度，利用穷举法
+     * @param str
+     * @return
+     */
+    public static int mostCicle(String str){
+        int count = 0;
+        int flag = 1;
+        int strLen = str.length();
+        int changeStrLen = strLen;
+        while(changeStrLen > 0 && flag == 1){
+            int endLoc = strLen - changeStrLen;
+            for(int i=0;i <= endLoc;i++){
+               String subStr = str.substring(i,changeStrLen+i);
+               if(hasCicle(subStr)){
+                   count = changeStrLen;
+                   flag = 0;
+                   break;
+               }
+            }
+            changeStrLen --;
+        }
+        return count;
     }
 }
