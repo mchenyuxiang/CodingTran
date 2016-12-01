@@ -46,7 +46,7 @@ public class Main {
     /**
      * 字符串反转函数
      * @param str
-     * @return
+     * @return 返回翻转字符串
      */
     public static String strReverse(String str){
         String reStr = "";
