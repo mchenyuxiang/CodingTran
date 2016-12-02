@@ -17,7 +17,8 @@ public class Main {
             strArray[i] = a;
         }
         for(int i=0;i < count; i++){
-            int length = mostCicle(strArray[i]);
+//            int length = mostCicle(strArray[i]);
+            int length = midlleCicle(strArray[i]);
             System.out.println(length);
         }
     }
@@ -80,5 +81,39 @@ public class Main {
             changeStrLen --;
         }
         return count;
+    }
+
+    /**
+     * 利用中心扩展法来进行判断
+     * @param str
+     * @return
+     */
+    public static int midlleCicle(String str){
+        int count = 0;
+        String longestStr = str.substring(0,1);
+        int strLength = str.length();
+        for(int i=0; i < strLength; i++){
+            String tempStr = helper(str,i,i);
+            if(tempStr.length() > longestStr.length()){
+                longestStr = tempStr;
+            }
+
+            // 偶数情况下判断
+            tempStr = helper(str,i,i+1);
+            if(tempStr.length() > longestStr.length()){
+                longestStr = tempStr;
+            }
+        }
+        count = longestStr.length();
+        return count;
+    }
+
+    public static String helper(String str,int begin,int end){
+        while(begin >= 0 && end <= str.length() - 1 && str.charAt(begin) == str.charAt(end)){
+            begin --;
+            end ++;
+        }
+        String subStr = str.substring(begin + 1, end);
+        return subStr;
     }
 }
