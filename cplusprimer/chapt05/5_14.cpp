@@ -18,20 +18,21 @@ int main()
 	vector<string> v;
 	string s;
 
-	cout << "è¯·è¾“å…¥ä¸ªæ•°" << endl;
+	cout << "ÇëÊäÈë¸öÊý" << endl;
 	int n;
 	cin >> n;
+	int size = n;
 	while(n --){
 		cin >> s;
 		v.push_back(s);
 	}
 
-	int a[n] = {1};
+	int a[size] = {1};
 	int max = a[0];
 	for (int i=1; i<(int)v.size(); i++){
 	
-		if(v[i-1]==v[i]){
-			a[i-1]=a[i];
+		if(v[i-1].compare(v[i]) == 0){
+			a[i]=a[i-1];
 			a[i] ++;
 		}else{
 			a[i] ++;
@@ -42,7 +43,7 @@ int main()
 	}
 	if(max == 1){
 	
-		cout << "æ²¡æœ‰å‡ºçŽ°è¿‡è¿žç»­å•è¯" << endl;
+		cout << "Ã»ÓÐ³öÏÖ¹ýÁ¬Ðøµ¥´Ê" << endl;
 	}else{
 	
 		cout << max << endl;
