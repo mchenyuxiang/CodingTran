@@ -1,25 +1,25 @@
 //
-// Created by chen on 17-5-8.
+// Created by mchenyuxiang on 2017/5/9.
 //
 #include <stdio.h>
-#include <math.h>
 #include <stdlib.h>
+#include <math.h>
 
-#define M 5
-#define N 4
-#define K 2
+#define M 10
+#define N 10
+#define K 3
 #define inf 0.00001
 
-const float lamdap = 0.08;
-const float lamdaq = 0.3;
-float alpha = 0.0002;
-const float beta = 0.02;
+const float alpha = 0.5;
+const float lamdap = 0.3;
+const float lamdaq = 0.4;
 
-void sgd(float r[][N], float p[][K], float q[][K]){
+void minibatch_sgd(float r[][N], float p[][K], float q[][K]){
     int step = 1;
     for(step;step < 5000;step++){
         float error_all = 0;
         for (int i = 0; i < M; i++){
+            float error = 0.0;
             for (int j = 0; j < N; j++){
                 if (r[i][j] != 0){
                     float *p_t = p[i];
@@ -27,18 +27,28 @@ void sgd(float r[][N], float p[][K], float q[][K]){
                     for (int t = 0; t < K; t++){
                         t_error += p[i][t] * q[j][t];
                     }
-                    float error = 0.0;
-                    error = r[i][j] - t_error;
+                    error += r[i][j] - t_error;
                     for (int t = 0; t < K; t++){
                         p[i][t] = p[i][t] + alpha*(error*q[j][t]- lamdap  * p[i][t]);
                         q[j][t] = q[j][t] + alpha*(error*p_t[t] - lamdaq  * q[j][t]);
                     }
                 }
             }
+            for(int j=0;j<N;j++){
+                if(r[i][j] != 0){
+                    float *p_t = p[i];
+                    for (int t = 0; t < K; t++){
+                        p[i][t] = p[i][t] + alpha*(error*q[j][t]- lamdap  * p[i][t]);
+                        q[j][t] = q[j][t] + alpha*(error*p_t[t] - lamdaq  * q[j][t]);
+                    }
+
+                }
+
+            }
         }
         for (int i = 0; i < M; i++){
             for (int j = 0; j < N; j++){
-                if (r[i*N + j] != 0){
+                if (r[i][j] != 0){
                     float t_error = 0.0;
                     float t_p = 0.0;
                     float t_q = 0.0;
@@ -100,7 +110,7 @@ int main()
     }
 
     printf("===================================\n");
-    sgd(r, p, q);
+    minibatch_sgd(r, p, q);
     float error_all = 1;
     for (int i = 0; i < M; i++){
         for (int j = 0; j < N; j++){
@@ -125,11 +135,11 @@ int main()
     printf("print the sgd matrix:\n");
     for (int i = 0; i < M; i++){
         for (int j = 0; j < N; j++){
-                float t_error = 0.0;
-                for (int t = 0; t < K; t++){
-                    t_error += p[i][t] * q[j][t];
-                }
-                r_t[i][j] = t_error;
+            float t_error = 0.0;
+            for (int t = 0; t < K; t++){
+                t_error += p[i][t] * q[j][t];
+            }
+            r_t[i][j] = t_error;
             printf("%f\t", r_t[i][j]);
         }
         printf("\n");
@@ -139,3 +149,4 @@ int main()
 
     return 0;
 }
+
