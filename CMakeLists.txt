@@ -4,5 +4,5 @@ project(AlgorithmsInC)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES  AlgorithmsInC/chapt01/wc.c)
+set(SOURCE_FILES  AlgorithmsInC/chapt01/1_3.cpp)
 add_executable(cplusprimer ${SOURCE_FILES})
