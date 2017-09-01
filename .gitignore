@@ -119,3 +119,5 @@ App/Common/Conf/db.php
 *.exe
 *.out
 *.app
+*.db
+*.opendb
