@@ -121,3 +121,5 @@ App/Common/Conf/db.php
 *.app
 *.db
 *.opendb
+/CodingCPP/Debug
+/CodingCPP/CodingCPP/Debug

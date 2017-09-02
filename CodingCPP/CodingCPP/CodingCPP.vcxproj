@@ -146,7 +146,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="divide.cpp" />
+    <ClCompile Include="FreopenTest.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OJscanf.cpp" />
+    <ClCompile Include="ScanfTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

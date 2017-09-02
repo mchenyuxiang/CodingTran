@@ -24,5 +24,30 @@
     <ClCompile Include="HelloWorld.cpp">
       <Filter>ProgramStudy\chapter01</Filter>
     </ClCompile>
+    <ClCompile Include="divide.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanfTest.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="OJscanf.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="FreopenTest.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>
