@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DayNumber.cpp" />
     <ClCompile Include="divide.cpp" />
     <ClCompile Include="FreopenTest.cpp" />
     <ClCompile Include="HelloWorld.cpp" />

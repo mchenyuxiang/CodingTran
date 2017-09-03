@@ -6,5 +6,6 @@ int main()
 	//scanfTest();
 	//OJscanf();
 	//FreopenTest();
-	primeTest();
+	//primeTest();
+	dayNumber();
 }

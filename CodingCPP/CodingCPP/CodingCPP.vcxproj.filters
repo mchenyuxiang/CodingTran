@@ -42,6 +42,9 @@
     <ClCompile Include="PrimeTest.cpp">
       <Filter>ProgramStudy\chapter01</Filter>
     </ClCompile>
+    <ClCompile Include="DayNumber.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

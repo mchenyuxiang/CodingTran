@@ -6,3 +6,4 @@ void scanfTest();
 int OJscanf();
 int FreopenTest();
 int primeTest();
+int dayNumber();
