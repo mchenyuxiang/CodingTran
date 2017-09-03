@@ -5,5 +5,6 @@ int main()
 	//devide();
 	//scanfTest();
 	//OJscanf();
-	FreopenTest();
+	//FreopenTest();
+	primeTest();
 }

@@ -5,3 +5,4 @@ int devide();
 void scanfTest();
 int OJscanf();
 int FreopenTest();
+int primeTest();

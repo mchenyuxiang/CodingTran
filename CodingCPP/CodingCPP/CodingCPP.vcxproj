@@ -151,6 +151,7 @@
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OJscanf.cpp" />
+    <ClCompile Include="PrimeTest.cpp" />
     <ClCompile Include="ScanfTest.cpp" />
   </ItemGroup>
   <ItemGroup>
