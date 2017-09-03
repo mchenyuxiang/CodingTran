@@ -7,3 +7,4 @@ int OJscanf();
 int FreopenTest();
 int primeTest();
 int dayNumber();
+int mulMatrix();

@@ -7,5 +7,6 @@ int main()
 	//OJscanf();
 	//FreopenTest();
 	//primeTest();
-	dayNumber();
+	//dayNumber();
+	mulMatrix();
 }
