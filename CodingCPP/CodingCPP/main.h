@@ -8,3 +8,4 @@ int FreopenTest();
 int primeTest();
 int dayNumber();
 int mulMatrix();
+int StrTest();

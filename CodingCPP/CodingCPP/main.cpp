@@ -8,5 +8,6 @@ int main()
 	//FreopenTest();
 	//primeTest();
 	//dayNumber();
-	mulMatrix();
+	//mulMatrix();
+	StrTest();
 }

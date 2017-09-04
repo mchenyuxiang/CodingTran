@@ -155,6 +155,7 @@
     <ClCompile Include="OJscanf.cpp" />
     <ClCompile Include="PrimeTest.cpp" />
     <ClCompile Include="ScanfTest.cpp" />
+    <ClCompile Include="Strstr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
