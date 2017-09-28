@@ -10,5 +10,6 @@ int main()
 	//dayNumber();
 	//mulMatrix();
 	//StrTest();
-	BinarySearchTest();
+	//BinarySearchTest();
+	LowBoundTest();
 }

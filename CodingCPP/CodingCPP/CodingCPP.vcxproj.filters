@@ -54,6 +54,9 @@
     <ClCompile Include="BinarySearch.cpp">
       <Filter>ProgramStudy\chapter01</Filter>
     </ClCompile>
+    <ClCompile Include="LowBound.cpp">
+      <Filter>ProgramStudy\chapter01</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
