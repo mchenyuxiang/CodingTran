@@ -9,5 +9,6 @@ int main()
 	//primeTest();
 	//dayNumber();
 	//mulMatrix();
-	StrTest();
+	//StrTest();
+	BinarySearchTest();
 }

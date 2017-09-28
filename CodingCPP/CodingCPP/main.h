@@ -9,3 +9,4 @@ int primeTest();
 int dayNumber();
 int mulMatrix();
 int StrTest();
+int BinarySearchTest();
