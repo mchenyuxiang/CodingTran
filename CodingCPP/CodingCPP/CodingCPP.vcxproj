@@ -151,12 +151,14 @@
     <ClCompile Include="divide.cpp" />
     <ClCompile Include="FreopenTest.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="InsertionSort.cpp" />
     <ClCompile Include="LowBound.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MulMatrix.cpp" />
     <ClCompile Include="OJscanf.cpp" />
     <ClCompile Include="PrimeTest.cpp" />
     <ClCompile Include="ScanfTest.cpp" />
+    <ClCompile Include="SelectionSort.cpp" />
     <ClCompile Include="Strstr.cpp" />
   </ItemGroup>
   <ItemGroup>

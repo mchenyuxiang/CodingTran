@@ -11,5 +11,7 @@ int main()
 	//mulMatrix();
 	//StrTest();
 	//BinarySearchTest();
-	LowBoundTest();
+	//LowBoundTest();
+	//SelectionSortTest();
+	InsertionSortTest();
 }

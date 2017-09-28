@@ -11,3 +11,5 @@
 //int StrTest();
 //int BinarySearchTest();
 int LowBoundTest();
+int SelectionSortTest();
+int InsertionSortTest();
