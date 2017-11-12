@@ -123,3 +123,4 @@ App/Common/Conf/db.php
 *.opendb
 /CodingCPP/Debug
 /CodingCPP/CodingCPP/Debug
+cmake-build-debug/
