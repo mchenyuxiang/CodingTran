@@ -5,5 +5,5 @@ project(AlgorithmMuke)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES   AlgorithmMuke/02-Sorting-Basic/01-Selection-Sort/main.cpp)
+set(SOURCE_FILES  AlgorithmMuke/02-Sorting-Basic/02-Selection-Sort-Using-Templete/UsingTemplete.cpp)
 add_executable(cplusprimer ${SOURCE_FILES})
