@@ -4,7 +4,7 @@
 
 #ifndef CPLUSPRIMER_CHAPTER6_H
 #define CPLUSPRIMER_CHAPTER6_H
-int fact(int);
-void swap(int *, int *);
+extern int fact(int);
+extern void swap(int *, int *);
 
 #endif //CPLUSPRIMER_CHAPTER6_H

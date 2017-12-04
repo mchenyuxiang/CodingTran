@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "../header/Chapter6.h"
-#include "Chapter6.cpp"
+//#include "Chapter6.cpp"
 
 using namespace std;
 
