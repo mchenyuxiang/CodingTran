@@ -25,7 +25,7 @@ void selectionSort(T arr[], int n) {
 
 int main() {
 
-    int n=1000000;
+    int n=10000;
     int *a = RandMatrix::generateIntRandomArray(n,0,n);
     Evaluate::sortTime("Selection Sort",selectionSort,a,n);
     delete[] a;
