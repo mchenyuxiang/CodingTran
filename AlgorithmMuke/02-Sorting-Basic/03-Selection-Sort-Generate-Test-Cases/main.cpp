@@ -6,7 +6,7 @@
 **/
 #include <iostream>
 #include "../../util/PrintUtil.h"
-#include "../../util/RandMatrix.h"
+#include "../../util/MatrixUtil.h"
 
 using namespace std;
 

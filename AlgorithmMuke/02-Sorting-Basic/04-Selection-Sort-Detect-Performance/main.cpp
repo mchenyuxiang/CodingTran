@@ -5,8 +5,8 @@
  * CreateTime:  2017/12/5 23:33
 **/
 #include <iostream>
-#include "../../util/Evaluate.h"
-#include "../../util/RandMatrix.h"
+#include "../../util/EvaluateUtil.h"
+#include "../../util/MatrixUtil.h"
 
 using namespace std;
 
@@ -26,8 +26,8 @@ void selectionSort(T arr[], int n) {
 int main() {
 
     int n=10000;
-    int *a = RandMatrix::generateIntRandomArray(n,0,n);
-    Evaluate::sortTime("Selection Sort",selectionSort,a,n);
+    int *a = MatrixUtil::generateIntRandomArray(n,0,n);
+    EvaluateUtil::sortTime("Selection Sort",selectionSort,a,n);
     delete[] a;
 
     return 0;
