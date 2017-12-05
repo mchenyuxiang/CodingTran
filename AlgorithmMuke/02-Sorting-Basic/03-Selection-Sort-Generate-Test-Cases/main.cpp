@@ -30,5 +30,7 @@ int main() {
     selectionSort(a, n);
     PrintUtil::printOneArray(a,n);
 
+    delete[] a;
+
     return 0;
 }
