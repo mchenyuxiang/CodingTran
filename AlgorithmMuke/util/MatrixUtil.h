@@ -31,6 +31,22 @@ namespace MatrixUtil {
         return arr;
     }
 
+    // 近乎有序的数组
+    int *generateNearlyOrderedArray(int n, int swapTimes){
+        int *arr = new int[n];
+        for(int i=0;i<n;i++)
+            arr[i] = i+1;
+
+        srand(time(NULL));
+        for(int i=0;i<swapTimes;i++){
+            int posx = rand()%n;
+            int posy = rand()%n;
+            swap(arr[posx],arr[posy]);
+        }
+
+        return arr;
+    }
+
     // 拷贝数组元素
     int *copyIntArray(int a[],int n){
 
